@@ -40,7 +40,8 @@ git clone https://github.com/CodeRunner369/Tours_travel-s-.git
 cd Tours_travel-s-
 3️⃣ Install Dependencies
 npm install
-4️⃣ Setup Environment VariablesPORT=5000
+4️⃣ Setup Environment
+ VariablesPORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 5️⃣ Run the Server
