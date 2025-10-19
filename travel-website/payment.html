@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - Wanderlust Travels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Wanderlust</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-mode-toggle">🌙</button>
+            </div>
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-header">
+            <div class="container">
+                <h1 class="fade-in">Payment Confirmation</h1>
+                <p class="fade-in">Review your booking details and complete your payment</p>
+            </div>
+        </section>
+
+        <section class="payment-content">
+            <div class="container">
+                <div class="payment-grid">
+                    <div class="booking-summary fade-in">
+                        <h2>Booking Summary</h2>
+                        <div id="booking-details">
+                            <!-- Booking details will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="payment-form fade-in">
+                        <h2>Payment Details</h2>
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                                <label for="credit-card">Credit Card</label>
+                            </div>
+                        </div>
+
+                        <div id="credit-card-form">
+                            <div class="form-group">
+                                <label for="confirm-card-number">Card Number</label>
+                                <input type="text" id="confirm-card-number" readonly>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="confirm-expiry">Expiry Date</label>
+                                    <input type="text" id="confirm-expiry" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-cvv">CVV</label>
+                                    <input type="text" id="confirm-cvv" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-total">
+                            <h3>Total Amount</h3>
+                            <p id="total-amount">₹0.00</p>
+                        </div>
+
+                        <button id="confirm-payment" class="btn">Confirm Payment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="payment-success" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Payment Successful!</h2>
+                <p>Your booking has been confirmed. A confirmation email has been sent to your registered email address.</p>
+                <div class="booking-reference">
+                    <p>Booking Reference: <span id="booking-ref"></span></p>
+                </div>
+                <button id="return-home" class="btn">Return to Home</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Wanderlust Travels</h3>
+                <p>Making your travel dreams come true since 2010</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@wanderlust.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Travel Street, Adventure City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html> 

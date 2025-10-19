@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - TravelEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">TravelEase</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="dark-mode-toggle">🌙</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="packages-header">
+            <div class="container">
+                <h1 class="fade-in">Our Travel Packages</h1>
+                <p class="fade-in">Discover our carefully curated selection of travel experiences</p>
+            </div>
+        </section>
+
+        <section class="filters fade-in">
+            <div class="container">
+                <div class="filter-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination">
+                        <option value="all">All Destinations</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="americas">Americas</option>
+                        <option value="africa">Africa</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="duration">Duration:</label>
+                    <select id="duration">
+                        <option value="all">Any Duration</option>
+                        <option value="short">1-5 days</option>
+                        <option value="medium">6-10 days</option>
+                        <option value="long">11+ days</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price">
+                        <option value="all">Any Price</option>
+                        <option value="budget">Under ₹1,00,000</option>
+                        <option value="mid">₹1,00,000 - ₹2,00,000</option>
+                        <option value="luxury">₹2,00,000+</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="packages-grid">
+            <div class="container">
+                <div class="tours-grid">
+                    <!-- Europe Packages -->
+                    <div class="card fade-in" data-destination="europe" data-duration="medium" data-price="mid">
+                        <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Paris, France">
+                        <div class="card-content">
+                            <h3>Paris Getaway</h3>
+                            <p>5 days exploring the city of love</p>
+                            <ul>
+                                <li>Eiffel Tower visit</li>
+                                <li>Louvre Museum tour</li>
+                                <li>Seine River cruise</li>
+                            </ul>
+                            <p class="price">₹1,29,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card fade-in" data-destination="europe" data-duration="long" data-price="luxury">
+                        <img src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Rome, Italy">
+                        <div class="card-content">
+                            <h3>Italian Dream</h3>
+                            <p>14 days exploring Italy</p>
+                            <ul>
+                                <li>Rome, Florence, Venice</li>
+                                <li>Vatican City tour</li>
+                                <li>Wine tasting in Tuscany</li>
+                            </ul>
+                            <p class="price">₹2,49,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Asia Packages -->
+                    <div class="card fade-in" data-destination="asia" data-duration="medium" data-price="mid">
+                        <img src="https://images.pexels.com/photos/1450354/pexels-photo-1450354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tokyo, Japan">
+                        <div class="card-content">
+                            <h3>Tokyo Adventure</h3>
+                            <p>6 days in the vibrant city of Tokyo</p>
+                            <ul>
+                                <li>Traditional tea ceremony</li>
+                                <li>Mount Fuji excursion</li>
+                                <li>Akihabara district tour</li>
+                            </ul>
+                            <p class="price">₹1,59,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card fade-in" data-destination="asia" data-duration="short" data-price="budget">
+                        <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bali, Indonesia">
+                        <div class="card-content">
+                            <h3>Bali Paradise</h3>
+                            <p>7 days in the tropical paradise of Bali</p>
+                            <ul>
+                                <li>Beachfront accommodation</li>
+                                <li>Traditional dance show</li>
+                                <li>Ubud market visit</li>
+                            </ul>
+                            <p class="price">₹99,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Americas Packages -->
+                    <div class="card fade-in" data-destination="americas" data-duration="medium" data-price="mid">
+                        <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="New York, USA">
+                        <div class="card-content">
+                            <h3>New York City</h3>
+                            <p>4 days in the city that never sleeps</p>
+                            <ul>
+                                <li>Broadway show</li>
+                                <li>Statue of Liberty tour</li>
+                                <li>Central Park exploration</li>
+                            </ul>
+                            <p class="price">₹1,49,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Africa Packages -->
+                    <div class="card fade-in" data-destination="africa" data-duration="long" data-price="luxury">
+                        <img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Safari, Kenya">
+                        <div class="card-content">
+                            <h3>Kenyan Safari</h3>
+                            <p>12 days wildlife adventure</p>
+                            <ul>
+                                <li>Game drives in Maasai Mara</li>
+                                <li>Hot air balloon safari</li>
+                                <li>Cultural village visit</li>
+                            </ul>
+                            <p class="price">₹2,99,999</p>
+                            <a href="booking.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TravelEase</h3>
+                <p>Making your travel dreams come true since 2010</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@travelease.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Travel Street, Adventure City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Package filtering functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const filters = {
+                destination: document.getElementById('destination'),
+                duration: document.getElementById('duration'),
+                price: document.getElementById('price')
+            };
+
+            const cards = document.querySelectorAll('.card');
+
+            function filterPackages() {
+                const selectedDestination = filters.destination.value;
+                const selectedDuration = filters.duration.value;
+                const selectedPrice = filters.price.value;
+
+                cards.forEach(card => {
+                    const destination = card.dataset.destination;
+                    const duration = card.dataset.duration;
+                    const price = card.dataset.price;
+
+                    const destinationMatch = selectedDestination === 'all' || destination === selectedDestination;
+                    const durationMatch = selectedDuration === 'all' || duration === selectedDuration;
+                    const priceMatch = selectedPrice === 'all' || price === selectedPrice;
+
+                    if (destinationMatch && durationMatch && priceMatch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            Object.values(filters).forEach(filter => {
+                filter.addEventListener('change', filterPackages);
+            });
+        });
+    </script>
+</body>
+</html> 
